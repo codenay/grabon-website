@@ -171,3 +171,17 @@ body { overflow-x: clip; }
   .product-stage:has(.compact) { min-height: 434px; }
   .demo-caption { margin-top: 24px; }
 }
+
+
+/* Soft mint and lavender light, with a restrained, seamless drift. */
+.product-stage::before {
+  background:
+    radial-gradient(ellipse at 8% 61%, rgba(138, 219, 183, .48), transparent 58%),
+    radial-gradient(ellipse at 53% 27%, rgba(113, 201, 179, .40), transparent 63%),
+    radial-gradient(ellipse at 90% 42%, rgba(199, 187, 232, .42), transparent 62%);
+  opacity: .85;
+}
+@keyframes hero-green-glow {
+  from { transform: translate(-8px, 4px) scale(.98); opacity: .78; }
+  to { transform: translate(10px, -6px) scale(1.025); opacity: .9; }
+}
